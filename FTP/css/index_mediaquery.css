@@ -1,0 +1,262 @@
+@charset "utf-8";
+
+
+/* index_mediaquery.css */
+
+
+
+/* table UI */
+@media all and (max-width : 1023px){
+
+    /* header */
+    header{
+        box-shadow: none;
+        border-bottom: 1px solid #eee;
+    }
+
+    header .inner{
+        position: static; /* .gnb의 기준이 되지 않도록 설정 -> fixed를 갖고있는 header가 기준이 됩니다.*/
+    }
+
+    /* 모바일 햄버거 메뉴 보이게 */
+    header .ham{
+        display: block;
+    }
+    /* header .m-menu{
+        float : right;
+        display: block;
+    } */
+    header .m-menu img{
+        height : 50px;
+        margin-top :5px;
+    }
+
+    header .gnb{
+        width : 100%;
+        top : 100px;
+        display: none;
+    }
+    header .gnb ul li{
+        float : none;
+        display: block;
+        background-color: rgba(143, 177, 240, 0.9);
+        border-bottom: 1px solid rgb(64, 123, 233);
+    }
+    header .gnb ul li a{
+        font-size : 18px;
+        font-size : 1.125rem;
+        padding : 7px 0;
+        line-height: 40px;
+    }
+    header .sns{
+        display: none;
+    }
+
+    section{
+        margin-top : 70px;
+    }
+
+    /* article1. intro */
+    article.intro{
+        background-size: 48%;
+        background-position: right center;
+        margin-bottom: 50px;
+    }
+
+    article.intro .txtbox{
+        width : 45%;
+        top : 120px;
+        letter-spacing: -1px;
+    }
+    
+    article.intro .txtbox p.des-en{
+        font-size : 20.8px;
+        font-size : 1.3rem;
+    }
+    article.intro .txtbox p.des-ko{
+        font-size : 17.6px;
+        font-size : 1.1rem;
+    }
+
+    article.intro .btn{
+        bottom : 20%;
+    }
+
+
+    /* article2. works */
+    article.works .imgboxwrap .imgbox{
+        width : 49%
+    }
+
+    article.works .imgboxwrap .imgbox:nth-child(2n+1){
+        margin-left : 0%;
+        /* padding-left : 0%; */
+    }
+
+    /* article3. about */
+    article.about .sectit{
+        font-size : 30px;
+        font-size : 1.875rem;
+    }
+    article.about p{
+        width : 70%;
+        font-size : 16px;
+        font-size : 1rem;
+    }
+
+    /* article4. news */
+    article.news .sectit{
+        font-size : 30px;
+        font-size : 1.875rem;
+    }
+    article.news > p{
+        font-size : 18px;
+        font-size : 1.125rem;
+    }
+    article.news .boxwrap .box h3.title{
+        font-size : 16px;
+        font-size : 1rem;
+    }
+
+      /* contact */
+    section.contact .sectit{
+        font-size : 40px;
+        font-size : 2.5rem;
+        margin-bottom: 50px;
+    }  
+    section.contact p{
+        font-size : 20px;
+        font-size : 1.25rem;
+    }
+
+    /* footer */
+    footer .top{
+        right : 2%;
+        bottom : 15px;
+    }
+    footer .footerbox h4{
+        font-size : 16px;
+        font-size : 1rem;
+        margin-bottom: 10px;
+
+    }
+}
+
+
+
+
+
+/* mobile UI */
+@media all and (max-width : 767px){
+
+    /* article1. intro */
+    article.intro{
+        height : 650px;
+        background-size: 300px;
+        background-position: 50% 90%;
+        margin-bottom : 30px;
+
+    }
+    article.intro .txtbox{
+        width : 100%;
+        top : 40px;
+    }
+
+    article.intro .txtbox p.des-en{
+        font-size : 18px;
+        font-size : 1.125rem;
+    }
+    article.intro .txtbox p.des-ko{
+        font-size : 16px;
+        font-size : 1rem;
+    }
+
+    article.intro .btn{
+        bottom : 58%;
+    }
+
+    /* article2. works */
+    article.works .imgboxwrap .imgbox ~ .imgbox{
+        margin-left : 0%;
+        /* padding-left : 2%; */
+    }
+    article.works .imgboxwrap .imgbox{
+        width : 100%;
+        margin-bottom : 4%;
+
+    }
+
+    /* article3. about */
+    article.about .sectit{
+        font-size : 26px;
+        font-size : 1.625rem;
+    }
+    article.about p{
+        width : 70%;
+        font-size : 16px;
+        font-size : 1rem;
+    }
+
+    /* article4. news */
+   
+ 
+    article.news .sectit{
+        text-align: center;
+        font-size : 26px;
+        font-size : 1.875rem;
+    }
+    article.news > p{
+        text-align: center;
+        font-size : 16px;
+        font-size : 1rem;
+    }
+    article.news .boxwrap .box{
+        width : 90%;
+        margin-left : 5%;
+        margin-bottom: 4%;
+    }
+   
+    article.news .boxwrap .box ~ .box{
+        margin-left : 5%;
+    }
+
+    article.news .boxwrap .box h3.title{
+        font-size : 16px;
+        font-size : 1rem;
+    }
+
+    /* contact */
+
+    
+    section.contact{
+        margin-top : 50px;
+        background-position: center center;
+    }
+    section.contact .sectit{
+        font-size : 36px;
+        font-size : 2.25rem;
+        margin-bottom : 80px;
+    }
+    section.contact p{
+        font-size : 16px;
+        font-size : 1rem;
+    }
+
+    /* footer */
+    footer{
+        background-color: #fff;
+    }
+    footer .footerbox{
+        width : 90%;
+        margin-bottom: 30px;
+    }
+    footer .footerbox h4{
+        margin-bottom: 5px;
+    }
+    footer .top{
+        bottom : 180px;
+    }
+}
+
+
+
